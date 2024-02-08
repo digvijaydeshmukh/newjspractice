@@ -1,0 +1,18 @@
+// let temp=[10,9,2,5,3,7,101,18];
+
+// let max=temp[0];
+// let smax=0;
+// for(let i=0;i<temp.length;i++){
+//     if(max<temp[i]){
+//         smax=max;
+//         max=temp[i];
+        
+//     } else if(smax<temp[i]){
+//         console.log(max,smax)
+//         smax=temp[i]
+//     }
+    
+// }
+
+// console.log(smax)
+
