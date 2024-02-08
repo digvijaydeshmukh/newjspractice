@@ -1,0 +1,20 @@
+let arr = [{ p: 4 }, { p: 2 }, { p:9 }, { p: 6 }];
+
+const check=(arr)=>{
+ var missing = []
+let temp=arr.sort((a,b)=>a.p-b.p)
+let t=temp[temp.length-1].p;
+
+for (let i = 0; i <= t; i++) {
+  if (temp.findIndex(el=>el.p==i) === -1) {
+    missing.push(i)
+  }
+}
+
+for(let i=0;i<missing.length;i++){
+arr.splice(missing[i],0,"{}");
+}
+console.log(arr)
+}
+
+check(arr)

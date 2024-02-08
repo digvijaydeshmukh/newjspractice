@@ -1,0 +1,21 @@
+const isPrime=(num)=>{
+let isp=true
+if(num<1){
+console.log("no prime")
+}else if(num>1){
+for(let i=2;i<num;i++){
+if(num%i==0){
+isp=false
+break;
+}
+}
+if(isp){
+console.log("prime")
+}else{
+return ("not prime")
+}
+}
+
+}
+
+console.log(isPrime(15))

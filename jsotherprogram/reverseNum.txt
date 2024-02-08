@@ -1,0 +1,14 @@
+const reverseNum=(n)=>{
+let a,b,temp=0;
+b=n;
+
+while(n>0){
+a=n%10;
+n=parseInt(n/10)
+temp=temp*10+a
+}
+console.log(temp)
+}
+
+console.log(reverseNum(123))
+
