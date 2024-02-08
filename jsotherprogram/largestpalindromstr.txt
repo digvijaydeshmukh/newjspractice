@@ -1,0 +1,28 @@
+let str = 'aba abba abc' 
+
+/* o/p = abba  */
+const rev=(str)=>{
+let spl=str.split(' ')
+let maxstr=0;
+let newstr=[];
+let rstr=''
+for(let i=0;i<spl.length;i++){
+let temp=spl[i].split('').reverse().join('')
+if(spl[i]==temp){
+newstr.push(temp);
+}
+
+}
+console.log(newstr)
+maxstr=newstr[0].length;
+for(let i=0;i<newstr.length;i++){
+if(maxstr<newstr[i].length){
+maxstr=newstr[i].length;
+rstr=newstr[i]
+}
+}
+
+return rstr
+}
+
+console.log(rev(str))

@@ -1,0 +1,25 @@
+
+
+let takeObj=(obj)=>{
+let newObj=[{
+state:'',
+city:[]
+}]
+obj.forEach(el=>{
+newObj.forEach(e=>{
+console.log(e)
+if(e.state==''){
+e.state=el.state
+e.city=[el.city]
+}else if(el.state===e.state){
+e.city.push(el.city)
+}else if(el.state!=newObj.state){
+newObj.push(el)
+}
+})
+})
+return newObj
+}
+
+console.log(takeObj(obj))
+console.log(t)

@@ -1,0 +1,16 @@
+let arr = [8, 7, 2, 5, 3, 1]
+let target = 8
+let arr1=[]
+const countPair=(arr,t)=>{
+console.log(arr,t)
+for(let i=0;i<=arr.length;i++){
+for(let j=i+1;j<=arr.length;j++){
+if(arr[i]+arr[j]==t){
+arr1.push('('+arr[i],arr[j]+')')
+console.log(`(${arr[i]},${arr[j]})`)
+}
+}
+}
+}
+
+countPair(arr,target)

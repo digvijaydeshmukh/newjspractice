@@ -1,0 +1,36 @@
+var arr = [1, 1, 0, 1, 0, 1, 1, 1, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0];
+var numberOfRivers = 0;
+var currentRiverLength = 0;
+var maxRiverLength = 0;
+var minRiverLength = Infinity; 
+
+for (var i = 0; i < arr.length; i++) {
+  if (arr[i] === 1) {
+    currentRiverLength++;
+    maxRiverLength = Math.max(maxRiverLength, currentRiverLength);
+    minRiverLength = Math.min(minRiverLength, currentRiverLength);
+  } else {
+    if (currentRiverLength > 0) {
+      numberOfRivers++;
+      currentRiverLength = 0;
+    }
+  }
+}
+
+if (currentRiverLength > 0) {
+  numberOfRivers++;
+}
+
+console.log("Number of rivers:", numberOfRivers);
+console.log("Max length of a river:", maxRiverLength);
+console.log("Min length of a river:", minRiverLength);
+
+
+arr=[]
+temp[0].map((el,c)=>{
+arr.unshift(temp[el])
+
+})
+console.log(arr)
+let d=arr.map((col, c) => arr.map((row, r) => arr[r][c]));
+console.log("",d)

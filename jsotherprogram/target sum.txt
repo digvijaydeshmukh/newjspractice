@@ -1,0 +1,13 @@
+let arr=[[1,2,3],[3,2,1,4]]
+let t=6
+
+let check=(arr,t)=>{
+for(let i=0;i<arr.length;i++){
+let temp=arr[i].reduce((acc,c)=>acc+c)
+if(temp==t){
+console.log(arr[i])
+}
+}
+}
+
+check(arr,t)
